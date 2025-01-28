@@ -1,0 +1,77 @@
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic HTML Demo</title>
+</head>
+<body>
+<header>
+    <h1>Mijn Website</h1>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Over Ons</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section aria-labelledby="welcome-heading">
+        <h2 id="welcome-heading">Welkom op mijn website</h2>
+        <img src="hro.png" height="250" alt="Het rode logo van Hogeschool Rotterdam"/>
+        <p>Hier zijn een paar prachtige secties en teksten om te bekijken.</p>
+    </section>
+
+    <section aria-labelledby="form-heading">
+        <h2 id="form-heading">Contactformulier</h2>
+        <form>
+            <div>
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="naam" required aria-required="true">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            <div>
+                <button type="submit">Verstuur</button>
+            </div>
+        </form>
+    </section>
+
+    <section aria-labelledby="table-heading">
+        <h2 id="table-heading">Tabel met Data</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Werkplaats</th>
+                <th>Technieken</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Werkplaats 1</td>
+                <td lang="en-GB">Python</td>
+            </tr>
+            <tr>
+                <td>Werkplaats 2</td>
+                <td lang="en-GB">Python + Jinja</td>
+            </tr>
+            <tr>
+                <td>Werkplaats 3</td>
+                <td lang="en-GB">Python + JavaScript</td>
+            </tr>
+            <tr>
+                <td>Werkplaats 4</td>
+                <td>?</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p style="color: #ffffff; background-color: #757575;">&copy; 2025 My Website</p>
+</footer>
+</body>
+</html>
